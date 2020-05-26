@@ -72,4 +72,7 @@ A screenshot showing the training process. It is not apparent, but the training 
 
 ![](img/dqn-training.gif)
 
+A screenshot showing the agent using the estimated action-value function on one of the episodes.
+
+![](img/dqn-policy.gif)
 
