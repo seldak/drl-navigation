@@ -9,6 +9,8 @@
 
 This project demonstrates how to train an agent to navigate and collect bananas in a large, square world.  
 
+This project uses Jupyter and the Unity ML-Agents environment as part of the first project of the [Deep Reinforcement Learning Nanodegree](https://www.udacity.com/course/deep-reinforcement-learning-nanodegree--nd893) assignments.
+
 ![Trained Agent][image1]
 
 A reward of +1 is provided for collecting a yellow banana, and a reward of -1 is provided for collecting a blue banana.  Thus, the goal of your agent is to collect as many yellow bananas as possible while avoiding blue bananas.  
@@ -23,28 +25,18 @@ The task is episodic, and in order to solve the environment, your agent must get
 
 ### Build Dependencies
 
-It is recommended to use `conda` variant. Start [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/download.html) for instructions on how to install.
+It is recommended to use a `conda` variant. Start [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/download.html) for instructions on how to install either `miniconda` or `anaconda`.
 
 To set up your python environment to run the code in this repository, follow the instructions below.
 
 1. Create (and activate) a new environment with Python 3.6.
 
-	- __Linux__ or __Mac__: 
 	```bash
 	conda create --name drlnd python=3.6
-	source activate drlnd
-	```
-	- __Windows__: 
-	```bash
-	conda create --name drlnd python=3.6 
-	activate drlnd
+	conda activate drlnd
 	```
 	
-2. Follow the instructions in [this repository](https://github.com/openai/gym) to perform a minimal install of OpenAI gym.  
-	- Next, install the **classic control** environment group by following the instructions [here](https://github.com/openai/gym#classic-control).
-	- Then, install the **box2d** environment group by following the instructions [here](https://github.com/openai/gym#box2d).
-	
-3. Clone the Udacity Deep Reinforcement Learning repository, and navigate to the `python/` folder.  Then, install several dependencies.
+3. Clone the Udacity Deep Reinforcement Learning repository, and navigate to the `python/` folder.  Then, install required dependencies.
 ```bash
 git clone https://github.com/udacity/deep-reinforcement-learning.git
 cd deep-reinforcement-learning/python
@@ -75,4 +67,9 @@ python -m ipykernel install --user --name drlnd --display-name "drlnd"
 ### Instructions
 
 Follow the instructions in `Navigation.ipynb` to get started with training your own agent!  
+
+A screenshot showing the training process. It is not apparent, but the training is going through the episodes much faster than the video is showing.
+
+![](img/dqn-training.gif)
+
 
